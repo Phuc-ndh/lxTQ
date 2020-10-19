@@ -1,0 +1,7 @@
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\bin\Debug\lxTQ1.exe.config
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\bin\Debug\lxTQ1.exe
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\bin\Debug\lxTQ1.pdb
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\obj\Debug\lxTQ1.csprojAssemblyReference.cache
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\obj\Debug\lxTQ1.csproj.CoreCompileInputs.cache
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\obj\Debug\lxTQ1.exe
+C:\GitHub\lxTQ\lxTQ1\lxTQ1\obj\Debug\lxTQ1.pdb
