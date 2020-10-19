@@ -9,61 +9,74 @@ namespace lxTQ1
 {
     class Program
     {
+        //static void PrintList(string path)
+        //{
+        //    DirectoryInfo dir = new DirectoryInfo(path);
+        //    foreach (var d in dir.GetDirectories())
+        //    {
+        //        Console.WriteLine(d.Name);
+        //    }
+        //    foreach (var f in dir.GetFiles())
+        //    {
+        //        Console.WriteLine(f.Name);
+        //    }
+        //}
         static void PrintList(string path)
         {
             DirectoryInfo dir = new DirectoryInfo(path);
+            Console.WriteLine("\n Directory of " + path + "\n");
             foreach (var d in dir.GetDirectories())
             {
-                Console.WriteLine(d.Name);
+                Console.WriteLine(d.LastWriteTime + "    <DIR>          " + d.Name);
             }
             foreach (var f in dir.GetFiles())
             {
                 Console.WriteLine(f.Name);
             }
         }
-        static void Create(string path)
-        {
-            FileInfo fi = new FileInfo(path);
-            if (!File.Exists(path))
-            {
-                fi.Create();
-                Console.WriteLine("File da duoc tao");
-            }
-            else
-                Console.WriteLine("File da ton tai");
-        }
-        static void CreateDir(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-                Console.WriteLine("Da tao thanh cong");
-            }
-            else
-                Console.WriteLine("Da ton tai");
-        }
-        static void Delete(string path)
-        {
-            FileInfo fi = new FileInfo(path);
-            if (fi.Exists)
-            {
-                fi.Delete();
-                Console.WriteLine("Da xoa thanh cong");
-            }
-            else
-                Console.WriteLine("Xoa that bai");
-        }
-        static void DeleteDir(string path)
-        {
-            DirectoryInfo di = new DirectoryInfo(path);
-            if (di.Exists)
-            {
-                di.Delete(true);
-                Console.WriteLine("Da xoa thanh cong");
-            }
-            else
-                Console.WriteLine("Xoa that bai");
-        }
+        //static void Create(string path)
+        //{
+        //    FileInfo fi = new FileInfo(path);
+        //    if (!File.Exists(path))
+        //    {
+        //        fi.Create();
+        //        Console.WriteLine("File da duoc tao");
+        //    }
+        //    else
+        //        Console.WriteLine("File da ton tai");
+        //}
+        //static void CreateDir(string path)
+        //{
+        //    if (!Directory.Exists(path))
+        //    {
+        //        Directory.CreateDirectory(path);
+        //        Console.WriteLine("Da tao thanh cong");
+        //    }
+        //    else
+        //        Console.WriteLine("Da ton tai");
+        //}
+        //static void Delete(string path)
+        //{
+        //    FileInfo fi = new FileInfo(path);
+        //    if (fi.Exists)
+        //    {
+        //        fi.Delete();
+        //        Console.WriteLine("Da xoa thanh cong");
+        //    }
+        //    else
+        //        Console.WriteLine("Xoa that bai");
+        //}
+        //static void DeleteDir(string path)
+        //{
+        //    DirectoryInfo di = new DirectoryInfo(path);
+        //    if (di.Exists)
+        //    {
+        //        di.Delete(true);
+        //        Console.WriteLine("Da xoa thanh cong");
+        //    }
+        //    else
+        //        Console.WriteLine("Xoa that bai");
+        //}
         static void Main(string[] args)
         {
             string a;
